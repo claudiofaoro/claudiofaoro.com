@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="container">
+{% include navbar.html %}
+<div class="post-title">
+  <h1>{{ page.title }}</h1>
+</div>
+<p>{{ page.date | date:"%d/%m/%Y" }} - {{ page.author }}</p>
+<div class="post-content">
+  {{ content }}
+</div>
+</div>

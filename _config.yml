@@ -1,0 +1,20 @@
+permalink: pretty
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-polyglot
+
+languages: ["it", "en"]
+default_lang: "it"
+exclude_from_localization: ["css", "images", "js"]
+parallel_localization: false
+
+sass:
+  sourcemap: never

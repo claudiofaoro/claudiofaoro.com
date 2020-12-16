@@ -1,0 +1,47 @@
+---
+layout: default
+title: Home
+---
+<header>
+<div class="home-wrapper">
+  <div class="home-wrapper-inner"> 
+    <img class="user-image" src="/assets/images/me.jpg" alt="My profile Photo">
+      <div class="site-title">
+        <h1><a href="{{site.baseurl}}">Claudio Faoro</a></h1>
+      </div>
+      <div class="social-container">
+        <a href="mailto:mail@claudiofaoro.com" title="Email" target="_blank">
+          <i class="fa fa-envelope fa-2x white-icon" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/claudio-faoro/" title="LinkedIn" target="_blank">
+          <i class="fa fa-linkedin-square fa-2x white-icon" aria-hidden="true"></i>
+        </a>
+        <a href="#" title="Git" target="_blank">
+          <i class="fa fa-code-fork fa-2x white-icon" aria-hidden="true"></i>
+        </a>
+        <a href="{{site.baseurl}}/feed.xml" title="Feed" target="_blank">
+          <i class="fa fa-rss fa-2x white-icon" aria-hidden="true"></i>
+        </a>
+     </div>
+    <p>
+      |
+      {% for tongue in site.languages %}
+        <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue | upcase }}</a> |
+      {% endfor %}
+    </p>
+  </div>
+</div>
+</header>
+
+<div class="container">
+  <div class="posts">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>
