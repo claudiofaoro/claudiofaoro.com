@@ -1,5 +1,9 @@
+title: Claudio Faoro
+
 permalink: pretty
 
+timezone: "Europa/Rome"
+url: https://claudiofaoro.com
 markdown: kramdown
 highlighter: rouge
 kramdown:
