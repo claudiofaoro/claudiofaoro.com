@@ -1,7 +1,9 @@
 ---
 layout: 'post'
 author: 'Claudio'
+title: 'Nuovo sito'
 lang: 'it'
+ref: 'nuovo-sito'
 ---
 
 Ciao mondo! Mi sa che è più orecchiabile in inglese, va beh.

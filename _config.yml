@@ -11,14 +11,15 @@ kramdown:
 
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-polyglot
 
+# Polyglot Settings
 languages: ["it", "en"]
 default_lang: "it"
-exclude_from_localization: ["css", "images", "js"]
+exclude_from_localization: ["css", "images", "js", "sitemap.xml"]
 parallel_localization: false
+lang_from_path: true
 
 sass:
   sourcemap: never

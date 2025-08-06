@@ -3,6 +3,7 @@ layout: 'post'
 author: 'Claudio'
 title: 'New website'
 lang: 'en'
+ref: 'nuovo-sito'
 ---
 
 Hello World!
